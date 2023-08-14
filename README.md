@@ -1,0 +1,1 @@
+This repository will contain various automated scripts for dealing with big data and model inferencing.
