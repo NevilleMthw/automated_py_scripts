@@ -3,7 +3,7 @@ import filecmp
 
 
 def compare_and_remove(source_folder: str, target_folder: str) -> None:
-    common_files = filecmp.dircmp(source_folder, target_folder).common_files
+    common_files: list = filecmp.dircmp(source_folder, target_folder).common_files
 
     for common_file in common_files:
         source_path = os.path.join(source_folder, common_file)
